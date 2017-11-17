@@ -44,8 +44,8 @@ var
 
 begin
    ActiveWindow := GetActiveWindow;
-   if ParamCount<2 then begin
-      MessageBox(ActiveWindow, PChar('You have to informe the program path as first argument'), PChar('Error'), MB_ICONERROR );
+   if ParamCount<1 then begin
+      MessageBox(ActiveWindow, PChar('You have to inform the program path as first argument'), PChar('Error'), MB_ICONERROR);
       Exit;
    end;
    ProgramPath := ParamStr(1);
