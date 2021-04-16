@@ -142,7 +142,7 @@ var
   Process: TProcess;
 begin
    Sections := TStringList.Create;
-   ini := TIniFile.Create('config.ini');
+   ini := TIniFile.Create('guardian.ini');
    try
       ini.ReadSections(Sections);
       for i := 0 to Sections.Count -1 do begin
